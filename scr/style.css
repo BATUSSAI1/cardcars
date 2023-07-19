@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Big+Shoulders+Display:wght@700 & mostrar=cambiar');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root{
+--Transparentwhite-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Verylightgray-background-headings-buttons: hsl(0, 0%, 95%);
+--Brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.container{
+    background-color: var(--Verylightgray-background-headings-buttons);
+    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.padre{
+    max-width: 1024px;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+}
+.sedan{
+background-color: var(--Brightorange);
+padding: 3rem;
+color: var(--Transparentwhite-paragraphs);
+display: flex;
+flex-direction: column;
+gap: 2rem   ;
+
+}
+
+.sedan h2{
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+.sedan p{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    padding: 0.5rem;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+}
+
+.btn0{
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+
+}
+.sedan button{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Brightorange);
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+}
+
+.suv{
+background-color: var(--Darkcyan);
+padding: 3rem;
+color: var(--Transparentwhite-paragraphs);
+display: flex;
+flex-direction: column;
+gap: 2rem   
+}
+
+.suv h2{
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+.suv p{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    padding: 0.5rem;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+}
+
+.btn0{
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+
+}
+.suv button{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Darkcyan);
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+}
+
+
+.lux{
+background-color: var(--Verydarkcyan);
+padding: 3rem;
+color: var(--Transparentwhite-paragraphs);
+display: flex;
+flex-direction: column;
+gap: 2rem  
+}
+
+.lux h2{
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+.lux p{
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    padding: 0.5rem;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+}
+
+.btn0{
+    display: flex;
+    padding: 3rem;
+    justify-content: center;
+
+}
+.lux button{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Verydarkcyan);
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+}
+
+@media ( max-width: 600px) {
+    .container{
+    
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    
+    .padre{
+        display: flex;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .sedan, .lux, .suv{
+        width: 90%;
+    }
+
+
+}
